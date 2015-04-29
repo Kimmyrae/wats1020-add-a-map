@@ -3,7 +3,15 @@
    ========================================================================== */
 
 #map-container { height: 180px; }
-
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: slategray;
+}
 h1 {
 	color: green;
 	font-family: Overlock,arial,serif;
@@ -38,16 +46,16 @@ p {
 }
 
 a {
-	color: #e8d4a7;
+	color: #333333;
 	text-decoration: none;
     text-align:right;
     padding:15px;
-     font-size:20px 
+    font-size:20px 
 }
 
 a:hover {
 	text-decoration: blink;
-    color: #4caab2;
+    color: green;
 }
 
   dl {
