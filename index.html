@@ -61,7 +61,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1 id="home">Mt. Ranier Information</h1>
+        <h1 id="home">Mt. Rainier Information</h1>
 		  
 	  <!-- TODO: Create an HTML structure that will trigger the Bootstrap
                    carousel feature. http://getbootstrap.com/javascript/#carousel
@@ -70,7 +70,20 @@
                    for the images. If you are using the Mt. Rainier images, then
                    there are readymade captions available from the Wikipedia
                    source page. -->	  
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	
+    <div class="container">
+      <blockquote>
+        &ldquo;Of all the fire mountains which, like beacons, once blazed along the Pacific Coast, Mount Rainier is the noblest.&rdquo;
+        <br>
+        &mdash; John Muir, Naturalist
+      </blockquote>
+      <div id="about" role="tabpanel">
+      <!-- Create the HTML structure to trigger the Bootstrap tabs feature:
+            http://getbootstrap.com/javascript/#tabs
+
+            You will need to add HTML structure to show each of the divs below
+            as a unique tab. -->
+		  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -81,15 +94,13 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="..." alt="...">
+      <img src="img/carousel/Mount_Rainier_and_lake_reflection.jpg" alt="Mount Rainier and lake reflection">
       <div class="carousel-caption">
         ...
       </div>
     </div>
     <div class="item">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        ...
+      <img src="img/carousel/Nisqually_River_near_Cougar_Rock_01.jpg" alt="Nisqually River Cougar Rock">
       </div>
     </div>
     ...
@@ -105,22 +116,6 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-      
-      </div>
-    </div>
-
-    <div class="container">
-      <blockquote>
-        &ldquo;Of all the fire mountains which, like beacons, once blazed along the Pacific Coast, Mount Rainier is the noblest.&rdquo;
-        <br>
-        &mdash; John Muir, Naturalist
-      </blockquote>
-      <div id="about" role="tabpanel">
-      <!-- Create the HTML structure to trigger the Bootstrap tabs feature:
-            http://getbootstrap.com/javascript/#tabs
-
-            You will need to add HTML structure to show each of the divs below
-            as a unique tab. -->
 
         <div id="description">
           <h2>About</h2>
