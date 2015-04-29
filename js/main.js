@@ -34,5 +34,5 @@ var circle = L.circle([46.852, -121.760], 500, {
 }).addTo(map);
 var popup = L.popup()
     .setLatLng([46.852, -121.760])
-    .setContent("I am a standalone popup.")
+    .setContent("Mount Rainier is right here!")
     .openOn(map);
