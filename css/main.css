@@ -20,21 +20,22 @@ h1 {
 h2 {
 	font-size: 30px;
         letter-spacing: -1px;
-        color: #DFBF84;
+        color: #2d666a;
         text-transform:uppercase;
         text-shadow: 1px 1px 0 #000,
-	margin: 10px 0 24px;
+	    margin: 10px 0 24px;
         text-align:center;
         line-height: 50px;
 }
 
 p {
-	color: red;
+	color: #333333;
 	font-family: 'Orienta', sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	margin: 0 0 24px;
-     text-align:center;
+	text-align:center;
+     
 }
 
 a {
