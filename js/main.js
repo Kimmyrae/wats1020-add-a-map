@@ -36,3 +36,5 @@ var popup = L.popup()
     .setLatLng([46.852, -121.760])
     .setContent("Mount Rainier is right here!")
     .openOn(map);
+var marker = L.marker([46.852, -121.760]).addTo(map);
+marker.bindPopup("<b>Welcome to Mt. Rainier!</b><br>This peak is 4,392 feet high.");
