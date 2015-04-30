@@ -77,34 +77,36 @@
         <br>
         &mdash; John Muir, Naturalist
       </blockquote>
-      <!-- Create the HTML structure to trigger the Bootstrap tabs feature:
-            http://getbootstrap.com/javascript/#tabs
-
--->
-
-
-<!--    You will need to add HTML structure to show each of the divs below
-            as a unique tab. -->
+      
 	
 
  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
+	  <ol class="carousel-indicators">
+		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	  </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src="img/carousel/Mount_Rainier_and_lake_reflection.jpg" alt="Mount Rainier and lake reflection">
-      <div class="carousel-caption">
-        ...
+      <div class="carousel-caption">	  
+		  <h3> Mount Rainier reflects in a small lake at the top of the Tatoosh Range</h3>
       </div>
     </div>
     <div class="item">
       <img src="img/carousel/Nisqually_River_near_Cougar_Rock_01.jpg" alt="Nisqually River Cougar Rock">
+		<div class="carousel-caption">
+			<h3>Mount Rainier seen from small footbridge on Wonderland Trail across the Nisqually River near Cougar Rock, Mount Rainier National Park, Washington State, U.S. </h3>
+		</div>
+      </div>
+	   <div class="item">
+      <img src="img/carousel/Mount_Rainier_sunset_and_clouds.jpg" alt="Mount Rainer sunset and clouds">
+		<div class="carousel-caption">
+			<h3>Mount Rainier towers over all surrounding mountains, lit by the sunset and wreathed in clouds </h3>
+		</div>
       </div>
     </div>
     ...
@@ -120,11 +122,30 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-  
+  <!-- Create the HTML structure to trigger the Bootstrap tabs feature:
+            http://getbootstrap.com/javascript/#tabs
+   You will need to add HTML structure to show each of the divs below
+            as a unique tab. -->
 		  
       <div id="about" role="tabpanel">
+		  <ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#description" aria-controls="home" role="tab" data-toggle="tab">About</a></li>
+			<li role="presentation"><a href="#history" aria-controls="profile" role="tab" data-toggle="tab">History</a></li>
+			<li role="presentation"><a href="#stats" aria-controls="messages" role="tab" data-toggle="tab">Statistics</a></li>
+			 <li role="presentation"><a href="#map" aria-controls="settings" role="tab" data-toggle="tab">Map</a></li>
+			<li role="presentation"><a href="#links" aria-controls="settings" role="tab" data-toggle="tab">Links</a></li>
+		  </ul>
 
-        <div id="description">
+  <!-- Tab panes -->
+  	<div class="tab-content">
+		<div role="tabpanel" class="tab-pane active" id="history">...</div>
+		<div role="tabpanel" class="tab-pane" id="stats">...</div>
+		<div role="tabpanel" class="tab-pane" id="map">...</div>
+		<div role="tabpanel" class="tab-pane" id="links">...</div>
+	  </div>
+</div>
+		  
+		<div id="description">
           <h2>About</h2>
           <p>Mount Rainier (pronounced: <b>/reɪˈnɪər/</b>) is the highest mountain of the Cascade Range of the Pacific Northwest, and the highest mountain in the state of Washington. It is a large active stratovolcano located 54 miles (87 km) southeast of Seattle. It is the most topographically prominent mountain in the contiguous United States and the Cascade Volcanic Arc, with a summit elevation of 14,411 ft (4,392 m).[1][2] Mt. Rainier is considered one of the most dangerous volcanoes in the world, and it is on the Decade Volcano list. Because of its large amount of glacial ice, Mt. Rainier could potentially produce massive lahars that could threaten the entire Puyallup River valley.</p>
         </div>
