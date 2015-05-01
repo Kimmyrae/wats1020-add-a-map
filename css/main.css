@@ -13,6 +13,9 @@
   background-color: #228B22 ;
 }
 
+blockquote {
+	background-color: green;
+}
 .container {
 	background-color: #DCDCDC;
 	
