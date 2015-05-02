@@ -3,7 +3,8 @@
    ========================================================================== */
 
 #map-container { height: 250px;}
-.navbar {
+
+.navbar-kim-custom {
   position: fixed;
   top: 0;
   left: 0;
@@ -117,7 +118,7 @@ ul{
 	list-style: none;
 }
 
-.footer {
+.footer-kim-custom  {
 	
 	font-family: Zeyada;
 	font-size: 10px;

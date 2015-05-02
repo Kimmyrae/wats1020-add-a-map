@@ -30,7 +30,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-kim-custom">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
@@ -170,27 +170,34 @@
         <div id="stats" role="tabpanel" class="tab-pane" >
           <!-- TODO: Use CSS to enhance the look of these statistics. Feel free to
                       enhance the HTML if you need to. -->
+		<div class="row" id="stats-list">
           <h2>Statistics</h2>
           <dl>
-            <dt>Elevation</dt>
-            <dd>14,411 ft (4,392 m)</dd>
-            <dt>Prominence</dt>
-            <dd>13,211 ft (4,027 m)</dd>
-            <dt>Range</dt>
-            <dd>Cascade Range</dd>
-            <dt>Type</dt>
-            <dd>Stratovolcano</dd>
-            <dt>Age of Rock</dt>
-            <dd>500,000 years</dd>
-            <dt>Last Eruption</dt>
-            <dd>November to December, 1894</dd>
-            <dt>First Ascent</dt>
-            <dd>1870 by Hazard Stevens and P. B. Van Trump</dd>
-            <dt>Easiest Route</dt>
-            <dd>Rock/ice climb via Disappointment Cleaver</dd>
+			  	<div class="col-md-4">
+					<dt>Elevation</dt>
+					<dd>14,411 ft (4,392 m)</dd>
+					<dt>Prominence</dt>
+					<dd>13,211 ft (4,027 m)</dd>
+					<dt>Range</dt>
+					<dd>Cascade Range</dd>
+			   </div>
+			   <div class="col-md-4">
+					<dt>Type</dt>
+					<dd>Stratovolcano</dd>
+					<dt>Age of Rock</dt>
+					<dd>500,000 years</dd>
+					<dt>Last Eruption</dt>
+					<dd>November to December, 1894</dd>
+			  </div>
+			  <div class="col-md-4">
+					<dt>First Ascent</dt>
+					<dd>1870 by Hazard Stevens and P. B. Van Trump</dd>
+					<dt>Easiest Route</dt>
+					<dd>Rock/ice climb via Disappointment Cleaver</dd>
+			  </div>
           </dl>
         </div>
-
+			 </div>
       </div>
 
       <div id="map">
@@ -212,7 +219,7 @@
 
       <hr>
 
-      <footer class = "footer">
+      <footer class = "footer footer-kim-custom">
         <p>Made by Kimberly Woodward in 2015. This page uses images and text from <a href="http://en.wikipedia.org/wiki/Mount_Rainier">The Wikipedia Mt. Rainier Page</a>.</p>
       </footer>
     </div> <!-- /container -->
