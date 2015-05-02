@@ -73,14 +73,15 @@
 	
 			</div>
 		</div>
-		
+			<div>
+			</div>
 		 	<blockquote>
         		&ldquo;Of all the fire mountains which, like beacons, once blazed along the Pacific Coast, Mount Rainier is the noblest.&rdquo;
        			 <br>
-       			 &mdash; John Muir, Naturalist
+				&mdash;<cite> John Muir, Naturalist</cite>
 	
       			</blockquote>
-			
+		
     
 	 <!-- TODO: Create an HTML structure that will trigger the Bootstrap
                    carousel feature. http://getbootstrap.com/javascript/#carousel
@@ -113,7 +114,7 @@
 		</div>
       </div>
 	   <div class="item">
-      <img src="img/carousel/Mount_Rainier_sunset_and_clouds.jpg" alt="Mount Rainer sunset and clouds">
+      <img src="img/carousel/Mount_Rainier_sunset.jpg" alt="Mount Rainer sunset and clouds">
 		<div class="carousel-caption">
 			<h3>Mount Rainier towers over all surrounding mountains, lit by the sunset and wreathed in clouds </h3>
 		</div>
@@ -139,30 +140,22 @@
             http://getbootstrap.com/javascript/#tabs
    You will need to add HTML structure to show each of the divs below
             as a unique tab. -->
-		  
-      <div id="about" role="tabpanel">
-		  <ul class="nav nav-tabs" role="tablist">
-			<li role="presentation" class="active"><a href="#description" aria-controls="home" role="tab" data-toggle="tab">About</a></li>
-			<li role="presentation"><a href="#history" aria-controls="profile" role="tab" data-toggle="tab">History</a></li>
-			<li role="presentation"><a href="#stats" aria-controls="messages" role="tab" data-toggle="tab">Statistics</a></li>
-			 <li role="presentation"><a href="#map" aria-controls="settings" role="tab" data-toggle="tab">Map</a></li>
-			<li role="presentation"><a href="#links" aria-controls="settings" role="tab" data-toggle="tab">Links</a></li>
-		  </ul>
-
-  <!-- Tab panes 
-  	<div class="tab-content">
-		<div role="tabpanel" class="tab-pane active" id="history">...</div>
-		<div role="tabpanel" class="tab-pane" id="stats">...</div>
-		<div role="tabpanel" class="tab-pane" id="map">...</div>
-		<div role="tabpanel" class="tab-pane" id="links">...</div>
-	  </div>-->
-</div>
-		  
-		<div id="description" class="tab-pane active">
+<div id="about" role="tabpanel">
+	     <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>
+            <li role="presentation"><a href="#history" aria-controls="history" role="tab" data-toggle="tab">History</a></li>
+            <li role="presentation"><a href="#stats" aria-controls="stats" role="tab" data-toggle="tab">Stats</a></li>
+          </ul>  
+     
+		 <!-- Tab panes -->  
+		 <div class="tab-content">
+          <div id="description" role="tabpanel" class="tab-pane active">
           <h2>About</h2>
           <p>Mount Rainier (pronounced: <b>/reɪˈnɪər/</b>) is the highest mountain of the Cascade Range of the Pacific Northwest, and the highest mountain in the state of Washington. It is a large active stratovolcano located 54 miles (87 km) southeast of Seattle. It is the most topographically prominent mountain in the contiguous United States and the Cascade Volcanic Arc, with a summit elevation of 14,411 ft (4,392 m).[1][2] Mt. Rainier is considered one of the most dangerous volcanoes in the world, and it is on the Decade Volcano list. Because of its large amount of glacial ice, Mt. Rainier could potentially produce massive lahars that could threaten the entire Puyallup River valley.</p>
-        </div>
-        <div id="history">
+			 </div>
+			 
+			<div id="history" role="tabpanel" class="tab-pane">
           <h2>History</h2>
           <p>At the time of European contact, the river valleys and other areas near the mountain were inhabited by many Pacific Northwest tribes who hunted and gathered berries in its forests and mountain meadows. These included the Nisqually, Cowlitz, Yakama, Puyallup, and Muckleshoot.</p>
 
@@ -174,7 +167,7 @@
 
           <p>Citing the need to also protect scenery and provide for public enjoyment, railroads and local businesses urged the creation of a national park in hopes of increased tourism. On March 2, 1899, President William McKinley established Mount Rainier National Park as America's fifth national park. Congress dedicated the new park "for the benefit and enjoyment of the people" and "... for the preservation from injury or spoliation of all timber, mineral deposits, natural curiosities, or wonders within said park, and their retention in their natural condition."</p>
         </div>
-        <div id="stats" class="tab-pane" >
+        <div id="stats" role="tabpanel" class="tab-pane" >
           <!-- TODO: Use CSS to enhance the look of these statistics. Feel free to
                       enhance the HTML if you need to. -->
           <h2>Statistics</h2>
@@ -200,7 +193,7 @@
 
       </div>
 
-      <div id="map" class="tab-pane" >
+      <div id="map">
         <h2>Map</h2>
         <!-- TODO: Use Leaflet.js to add a map showing Mt. Rainier's location
                     http://leafletjs.com/examples/quick-start.html -->
