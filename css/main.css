@@ -5,14 +5,10 @@
 #map-container { height: 250px;}
 
 body {
-    background-image: url('..img/carousel/Climbers.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size: cover;
-    background-color: #464646;
+    
+    background-color: #13bf41;
 }
-.navbar-kim-custom {
+/*.navbar-kim-custom {
 	border-bottom: 5px solid #13bf41; 
     position: fixed;
 	top: 0;
@@ -29,9 +25,33 @@ body {
 	background: linear-gradient(to right, rgba(175,204,164,1) 0%, rgba(160,193,147,1) 11%, rgba(42,108,9,1) 98%, rgba(45,117,0,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#afcca4', endColorstr='#2d7500', GradientType=1 );
 }
+*/
 
+.navbar-kim-custom {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	top: 0;
+    left: 0;
+	background-color: #3399FF;
+	color: white;
+		
+}
 
-.jumbotron{
+.navbar-kim-custom :hover {
+	background-color: #0033CC;
+	 -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.jumbotron :hover{
+  background-color: #E6FFFF;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }
 
 blockquote {
@@ -40,22 +60,24 @@ blockquote {
     5px;
     text-align: center;
     font-size: 15px;
+	
 }
 blockquote:before, blockquote:after {
     position: absolute;
     width: 60px;
     height: 60px;
     font-size: 20px;
-    line-height: 1;
+    line-height: .5;
 }
 
 blockquote p{
-	color: darkgray;
+	color: darkgreen;
 }
 
 h1 {
 	color: green;
-	font-family: Overlock,arial,serif;
+	font-family: 'Futura BT Extra Bold Condensed', Avenir, Arial, sans-serif;
+	letter-spacing: -0.075em;
 	font-size: 65px;
 	font-weight: normal;
 	line-height: 60px;
@@ -63,9 +85,10 @@ h1 {
     text-transform:uppercase;
     text-shadow: 1px 1px 0 #000;
     text-align:center;
-}
+	
 
 h2 {
+	font-family: 'Futura BT Medium', Avenir, Arial, sans-serif;
 	font-size: 30px;
     letter-spacing: -1px;
     color: green;
@@ -75,6 +98,7 @@ h2 {
     text-align:center;
     line-height: 50px;
 }
+
 
 p {
 	color: #333333;
@@ -101,7 +125,7 @@ a:hover {
 }
 
   dl {
-    border: 3px double #ccc;
+
     padding: 0.5em;
   }
   dt {
@@ -122,9 +146,7 @@ a:hover {
     padding: 0 0 0.5em 0;
   }
 
-ul{
-	list-style: none;
-}
+
 
 .footer-kim-custom  {
 	
