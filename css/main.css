@@ -46,12 +46,12 @@ body {
   transition: all 1s ease-in-out;
 }
 .jumbotron :hover{
-  background-color: #E6FFFF;
+  background-color: #0066CC;
   cursor: pointer;
   -webkit-transition: background-color 2s ease-out;
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
-  transition: background-color 2s ease-out;
+  transition: background-color 10s ease-out;
 }
 
 blockquote {
